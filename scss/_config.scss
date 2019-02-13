@@ -7,7 +7,7 @@ $primary-color: rgb(23, 13, 68);
 $secondary-color: hsl(12, 80%, 53%);
 $show-home-image: true;
 $home-image: url(../img/unsplash.jpg);
-$background-opacity: 0.3;
+$background-opacity: 0.5;
 
 //bg image mixin
 @mixin background {
