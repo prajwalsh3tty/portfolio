@@ -1,0 +1,88 @@
+///Widescreens
+
+@include mediaXL {
+  .projects{
+   
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+//desktops and laptops
+@include mediaLg {
+  .projects{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
+
+//Tablets and phones
+
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+.about-info{
+
+  grid-template-areas: 
+  'tech-1'
+  'tech-2';
+
+  grid-template-columns: 1fr;
+}
+.projects{
+  grid-template-areas: 
+  'item1'
+   'item2' 'item3';
+  grid-template-columns:1fr;
+}
+
+
+}
+
+//phones
+@include mediaSm {
+  main {
+    margin-top: 10vh;
+    .lg-heading {
+      font-size: 3rem;
+    }
+    .sg-heading {
+      font-size: 1rem;
+    }
+    .icons {
+      font-size: 0.6rem;
+    }
+    //font-size: 1rem;
+
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  .menu-btn{
+      top:-20px;
+  }
+  .about-info{
+
+    grid-template-areas: 
+    'tech-1'
+    'tech-2';
+  
+    grid-template-columns: 1fr;
+  }
+  .projects{
+  grid-template-areas: 'item1'
+   'item2' 'item3';
+    grid-template-columns:1fr;
+  }
+
+  .boxes div{
+    // align-items: center;
+    // text-align: center;
+    font-size: 1.5rem;
+  }
+}
